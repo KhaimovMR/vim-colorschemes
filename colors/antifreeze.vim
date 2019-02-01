@@ -38,7 +38,7 @@ hi Delimiter        guifg=#00A0A0     guibg=NONE        gui=NONE      ctermfg=cy
 
 " Vim >= 7.0 specific colors
 if version >= 700
-hi CursorLine					ctermbg=238		cterm=none						guibg=#32322f
+hi CursorLine					ctermbg=233		cterm=none						guibg=#32322f
 hi MatchParen	ctermfg=228		ctermbg=101		cterm=bold		guifg=#eae788	guibg=#857b6f	gui=bold
 hi Pmenu		ctermfg=230		ctermbg=238						guifg=#ffffd7	guibg=#444444
 hi PmenuSel		ctermfg=232		ctermbg=192						guifg=#080808	guibg=#cae982
