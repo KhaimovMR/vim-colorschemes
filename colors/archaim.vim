@@ -14,7 +14,7 @@ if version > 580
 	endif
 endif
 
-let colors_name = "antifreeze"
+let colors_name = "archaim"
 
 
 " General colors
