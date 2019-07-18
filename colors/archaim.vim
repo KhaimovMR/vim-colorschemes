@@ -32,13 +32,16 @@ hi LineNr		ctermfg=241		ctermbg=NONE	cterm=none		guifg=#857b6f	guibg=#080808	gui
 hi SpecialKey	ctermfg=241		ctermbg=235		cterm=none		guifg=#626262	guibg=#2b2b2b	gui=none
 hi WarningMsg	ctermfg=203										guifg=#ff5f55
 hi ErrorMsg		ctermfg=196		ctermbg=236		cterm=bold		guifg=#ff2026	guibg=#3a3a3a	gui=bold
+hi LongLine						ctermbg=53
 
 "
 hi Delimiter        guifg=#00A0A0     guibg=NONE        gui=NONE      ctermfg=cyan        ctermbg=NONE        cterm=NONE
 
 " Vim >= 7.0 specific colors
 if version >= 700
-hi CursorLine					ctermbg=233		cterm=none						guibg=#32322f
+hi CursorLine					ctermbg=234		cterm=none						guibg=#32322f
+hi ColorColumn 					ctermbg=236
+"let &colorcolumn=join(range(101,999),",")
 hi MatchParen	ctermfg=228		ctermbg=101		cterm=bold		guifg=#eae788	guibg=#857b6f	gui=bold
 hi Pmenu		ctermfg=230		ctermbg=238						guifg=#ffffd7	guibg=#444444
 hi PmenuSel		ctermfg=232		ctermbg=192						guifg=#080808	guibg=#cae982
