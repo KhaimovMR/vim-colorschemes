@@ -34,23 +34,6 @@ hi WarningMsg	ctermfg=203										guifg=#ff5f55
 hi ErrorMsg		ctermfg=196		ctermbg=236		cterm=bold		guifg=#ff2026	guibg=#3a3a3a	gui=bold
 hi LongLine						ctermbg=53
 
-" semshi
-hi semshiLocal           ctermfg=209 guifg=#ff875f
-hi semshiGlobal          ctermfg=214 guifg=#ffaf00
-hi semshiImported        ctermfg=214 guifg=#ffaf00 cterm=bold gui=bold
-hi semshiParameter       ctermfg=75  guifg=#5fafff
-hi semshiParameterUnused ctermfg=117 guifg=#87d7ff cterm=underline gui=underline
-hi semshiFree            ctermfg=218 guifg=#ffafd7
-hi semshiBuiltin         ctermfg=207 guifg=#ff5fff
-hi semshiAttribute       ctermfg=49  guifg=#00ffaf
-hi semshiSelf            ctermfg=249 guifg=#b2b2b2
-hi semshiUnresolved      ctermfg=226 guifg=#ffff00 cterm=underline gui=underline
-hi semshiSelected        ctermfg=231 guifg=#ffffff ctermbg=161 guibg=#d7005f
-
-hi semshiErrorSign       ctermfg=231 guifg=#ffffff ctermbg=160 guibg=#d70000
-hi semshiErrorChar       ctermfg=231 guifg=#ffffff ctermbg=160 guibg=#d70000
-sign define semshiError text=E> texthl=semshiErrorSign
-
 "
 hi Delimiter        guifg=#00A0A0     guibg=NONE        gui=NONE      ctermfg=cyan        ctermbg=NONE        cterm=NONE
 
@@ -106,8 +89,17 @@ hi Identifier	ctermfg=192		cterm=none		guifg=#cae982	gui=none
 hi Type			ctermfg=193		cterm=none		guifg=#d4d987	gui=none
 hi Special		ctermfg=214		cterm=none		guifg=#eadead	gui=none
 hi String		ctermfg=229		cterm=none		guifg=#95e454	gui=italic
-hi Comment		ctermfg=108		cterm=none		guifg=#9c998e	gui=italic
+hi Comment		ctermfg=242		cterm=none		guifg=#9c998e	gui=italic
 
+
+" python
+hi pythonClassVar ctermfg=114		ctermbg=NONE		cterm=none		guifg=#ff2026	guibg=#3a3a3a	gui=bold
+"hi pythonClassVar ctermfg=248		ctermbg=NONE		cterm=none		guifg=#ff2026	guibg=#3a3a3a	gui=bold
+hi pythonFunction ctermfg=193		ctermbg=NONE		cterm=none		guifg=#ff2026	guibg=#3a3a3a	gui=none
+hi pythonClass ctermfg=193		ctermbg=NONE		cterm=bold		guifg=#ff2026	guibg=#3a3a3a	gui=bold
+hi pythonClassName ctermfg=193		ctermbg=NONE		cterm=bold		guifg=#ff2026	guibg=#3a3a3a	gui=bold
+hi pythonBuiltinFunc ctermfg=193		ctermbg=NONE		cterm=none		guifg=#ff2026	guibg=#3a3a3a	gui=bold
+hi pythonBuiltinType ctermfg=45		ctermbg=NONE		cterm=none		guifg=#ff2026	guibg=#3a3a3a	gui=bold
 
 " Links
 hi! link FoldColumn		Folded
