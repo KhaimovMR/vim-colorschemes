@@ -27,8 +27,9 @@ hi Folded		ctermfg=103		ctermbg=237		cterm=none		guifg=#a0a8b0	guibg=#3a4046	gui
 hi Title		ctermfg=230						cterm=bold		guifg=#ffffd7					gui=bold
 hi StatusLine	ctermfg=230		ctermbg=238		cterm=none		guifg=#ffffd7	guibg=#444444	gui=italic
 hi VertSplit	ctermfg=238		ctermbg=238		cterm=none		guifg=#444444	guibg=#444444	gui=none
-hi StatusLineNC	ctermfg=241		ctermbg=238		cterm=none		guifg=#857b6f	guibg=#444444	gui=none
-hi LineNr		ctermfg=241		ctermbg=NONE	cterm=none		guifg=#857b6f	guibg=#080808	gui=none
+hi StatusLineNC	ctermfg=241 ctermbg=238		cterm=none		guifg=#857b6f	guibg=#444444	gui=none
+hi LineNr		    ctermfg=228 ctermbg=233	cterm=none		guifg=#857b6f	guibg=#080808	gui=none
+hi CursorLineNr	ctermfg=156 ctermbg=233 cterm=bold guifg=#857b6f	guibg=#080808	gui=none
 hi SpecialKey	ctermfg=241		ctermbg=235		cterm=none		guifg=#626262	guibg=#2b2b2b	gui=none
 hi WarningMsg	ctermfg=203										guifg=#ff5f55
 hi ErrorMsg		ctermfg=196		ctermbg=236		cterm=bold		guifg=#ff2026	guibg=#3a3a3a	gui=bold
@@ -38,20 +39,23 @@ hi LongLine						ctermbg=53
 hi Delimiter        guifg=#00A0A0     guibg=NONE        gui=NONE      ctermfg=cyan        ctermbg=NONE        cterm=NONE
 
 " Vim >= 7.0 specific colors
+
 if version >= 700
-hi CursorLine					ctermbg=234		cterm=none						guibg=#32322f
-hi ColorColumn 					ctermbg=236
-"let &colorcolumn=join(range(101,999),",")
-hi MatchParen	ctermfg=228		ctermbg=101		cterm=bold		guifg=#eae788	guibg=#857b6f	gui=bold
-hi Pmenu		ctermfg=230		ctermbg=238						guifg=#ffffd7	guibg=#444444
-hi PmenuSel		ctermfg=232		ctermbg=192						guifg=#080808	guibg=#cae982
+  hi SignColumn     ctermfg=166 ctermbg=none cterm=bold guifg=#857b6f	guibg=#080808	gui=none
+  hi CursorLine     ctermbg=234 cterm=none guibg=#32322f
+  hi CursorColumn		ctermbg=234 cterm=none guifg=#857b6f	guibg=#080808	gui=none
+  hi ColorColumn    ctermbg=236
+  "let &colorcolumn=join(range(101,999),",")
+  hi MatchParen	ctermfg=228		ctermbg=101		cterm=bold		guifg=#eae788	guibg=#857b6f	gui=bold
+  hi Pmenu		ctermfg=230		ctermbg=238						guifg=#ffffd7	guibg=#444444
+  hi PmenuSel		ctermfg=232		ctermbg=192						guifg=#080808	guibg=#cae982
 endif
 
 " Diff highlighting
-hi DiffAdd						ctermbg=17										guibg=#2a0d6a
-hi DiffDelete	ctermfg=234		ctermbg=60		cterm=none		guifg=#242424	guibg=#3e3969	gui=none
-hi DiffText						ctermbg=53		cterm=none						guibg=#73186e	gui=none
-hi DiffChange					ctermbg=237										guibg=#382a37
+hi DiffAdd            ctermfg=119 ctermbg=60  cterm=bold
+hi DiffDelete	        ctermfg=203 ctermbg=60 cterm=bold
+hi DiffText						ctermfg=234 ctermbg=60 cterm=bold
+hi DiffChange					ctermfg=227 ctermbg=60 cterm=bold
 
 "hi CursorIM
 "hi Directory
@@ -64,7 +68,7 @@ hi DiffChange					ctermbg=237										guibg=#382a37
 "hi Question
 "hi Scrollbar
 "hi SignColumn
-"hi SpellBad
+hi SpellBad ctermbg=9
 "hi SpellCap
 "hi SpellLocal
 "hi SpellRare
@@ -93,6 +97,7 @@ hi Comment		ctermfg=242		cterm=none		guifg=#9c998e	gui=italic
 
 
 " python
+hi pythonClassParameters ctermfg=15		ctermbg=NONE		cterm=bold		guifg=#ff2026	guibg=#3a3a3a	gui=bold
 hi pythonClassVar ctermfg=114		ctermbg=NONE		cterm=none		guifg=#ff2026	guibg=#3a3a3a	gui=bold
 "hi pythonClassVar ctermfg=248		ctermbg=NONE		cterm=none		guifg=#ff2026	guibg=#3a3a3a	gui=bold
 hi pythonFunction ctermfg=193		ctermbg=NONE		cterm=none		guifg=#ff2026	guibg=#3a3a3a	gui=none
@@ -111,5 +116,20 @@ hi! link NonText		LineNr
 hi airline_a ctermbg=192
 hi airline_z ctermbg=192
 
-hi ALEErrorSign			ctermfg=15		ctermbg=160		cterm=bold		guifg=#000000	guibg=#ee4444	gui=none
-hi ALEWarningSign		ctermfg=15		ctermbg=166		cterm=bold		guifg=#000000	guibg=#dddd44	gui=none
+hi ALEErrorSign			           ctermfg=9 ctermbg=none cterm=none guifg=#000000 guibg=#ee4444 gui=none
+hi ALEWarningSign		           ctermfg=166 ctermbg=none cterm=none guifg=#000000 guibg=#dddd44 gui=none
+hi ALESignColumnWithErrors     ctermfg=9 ctermbg=none cterm=none guifg=#000000 guibg=#ee4444 gui=none
+hi ALESignColumnWithoutErrors  ctermfg=9 ctermbg=none cterm=none guifg=#000000 guibg=#ee4444 gui=none
+
+hi GitGutterAddInvisible       ctermfg=233 ctermbg=1   cterm=bold guifg=bg guibg=#080808
+hi GitGutterChangeInvisible    ctermfg=233 ctermbg=88  cterm=bold guifg=bg guibg=#080808
+hi GitGutterDeleteInvisible    ctermfg=233 ctermbg=130 cterm=bold guifg=bg guibg=#080808
+hi GitGutterAddDefault         ctermfg=233 ctermbg=198 cterm=bold guibg=#080808
+hi GitGutterChangeDefault      ctermfg=233 ctermbg=225 cterm=bold guibg=#080808
+hi GitGutterDeleteDefault      ctermfg=233 ctermbg=226 cterm=bold guifg=#242424 guibg=#080808
+hi GitGutterAddLineNr          ctermfg=233 ctermbg=1   cterm=bold guifg=bg guibg=#080808
+hi GitGutterChangeLineNr       ctermfg=233 ctermbg=88  cterm=bold guifg=bg guibg=#080808
+hi GitGutterDeleteLineNr       ctermfg=233 ctermbg=130 cterm=bold guifg=bg guibg=#080808
+hi GitGutterChangeDeleteLineNr ctermfg=233 ctermbg=198 cterm=bold guifg=bg guibg=#080808
+
+hi NonText ctermbg=none
