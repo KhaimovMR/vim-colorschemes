@@ -25,9 +25,9 @@ hi VisualNOS	ctermfg=251		ctermbg=236		cterm=none		guifg=#c3c6ca	guibg=#303030	g
 hi Search		ctermfg=177		ctermbg=241		cterm=none		guifg=#d787ff	guibg=#636066	gui=none
 hi Folded		ctermfg=103		ctermbg=237		cterm=none		guifg=#a0a8b0	guibg=#3a4046	gui=none
 hi Title		ctermfg=230						cterm=bold		guifg=#ffffd7					gui=bold
-hi StatusLine	ctermfg=230		ctermbg=238		cterm=none		guifg=#ffffd7	guibg=#444444	gui=italic
-hi VertSplit	ctermfg=238		ctermbg=238		cterm=none		guifg=#444444	guibg=#444444	gui=none
-hi StatusLineNC	ctermfg=241 ctermbg=238		cterm=none		guifg=#857b6f	guibg=#444444	gui=none
+hi StatusLine	ctermfg=230		ctermbg=253		cterm=none		guifg=#ffffd7	guibg=#444444	gui=italic
+hi VertSplit	ctermfg=238		ctermbg=190		cterm=none		guifg=#444444	guibg=#444444	gui=none
+hi StatusLineNC	ctermfg=238 ctermbg=190		cterm=none		guifg=#857b6f	guibg=#444444	gui=none
 hi LineNr		    ctermfg=228 ctermbg=233	cterm=none		guifg=#857b6f	guibg=#080808	gui=none
 hi CursorLineNr	ctermfg=156 ctermbg=233 cterm=bold guifg=#857b6f	guibg=#080808	gui=none
 hi SpecialKey	ctermfg=241		ctermbg=235		cterm=none		guifg=#626262	guibg=#2b2b2b	gui=none
