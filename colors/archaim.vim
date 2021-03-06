@@ -18,7 +18,7 @@ let colors_name = "archaim"
 
 
 " General colors
-hi Normal		ctermfg=231		ctermbg=NONE	cterm=none		guifg=#e3e0d7	guibg=#242424	gui=none
+hi Normal		ctermfg=231		ctermbg=none	cterm=none		guifg=#e3e0d7	guibg=#242424	gui=none
 hi Cursor		ctermfg=234		ctermbg=228		cterm=none		guifg=#242424	guibg=#eae788	gui=none
 hi Visual		ctermfg=251		ctermbg=238		cterm=none		guifg=#c3c6ca	guibg=#554d4b	gui=none
 hi VisualNOS	ctermfg=251		ctermbg=236		cterm=none		guifg=#c3c6ca	guibg=#303030	gui=none
@@ -35,6 +35,11 @@ hi WarningMsg	ctermfg=203										guifg=#ff5f55
 hi ErrorMsg		ctermfg=196		ctermbg=236		cterm=bold		guifg=#ff2026	guibg=#3a3a3a	gui=bold
 hi LongLine						ctermbg=53
 
+hi NormalFloat ctermbg=0
+hi CocExplorerNormalFloat ctermbg=0
+hi FZFNormal ctermfg=15		ctermbg=0	cterm=none		guifg=#e3e0d7	guibg=#242424	gui=none
+hi FZFBorder ctermfg=15		ctermbg=0	cterm=none		guifg=#e3e0d7	guibg=#242424	gui=none
+
 "
 hi Delimiter        guifg=#00A0A0     guibg=NONE        gui=NONE      ctermfg=cyan        ctermbg=NONE        cterm=NONE
 
@@ -47,8 +52,8 @@ if version >= 700
   hi ColorColumn    ctermbg=236
   "let &colorcolumn=join(range(101,999),",")
   hi MatchParen	ctermfg=228		ctermbg=101		cterm=bold		guifg=#eae788	guibg=#857b6f	gui=bold
-  hi Pmenu		ctermfg=230		ctermbg=238						guifg=#ffffd7	guibg=#444444
-  hi PmenuSel		ctermfg=232		ctermbg=192						guifg=#080808	guibg=#cae982
+  hi Pmenu ctermfg=15 ctermbg=57 guifg=#ffffd7 guibg=#444444
+  hi PmenuSel ctermfg=232 ctermbg=192 guifg=#080808 guibg=#cae982
 endif
 
 " Diff highlighting
